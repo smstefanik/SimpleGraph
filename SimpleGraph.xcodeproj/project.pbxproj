@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7919DAB218D3554F00C2698A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7919DAB118D3554F00C2698A /* Foundation.framework */; };
+		7919DAB418D3554F00C2698A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7919DAB318D3554F00C2698A /* CoreGraphics.framework */; };
+		7919DAB618D3554F00C2698A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7919DAB518D3554F00C2698A /* UIKit.framework */; };
+		7919DABC18D3554F00C2698A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7919DABA18D3554F00C2698A /* InfoPlist.strings */; };
+		7919DABE18D3554F00C2698A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7919DABD18D3554F00C2698A /* main.m */; };
+		7919DAC218D3554F00C2698A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7919DAC118D3554F00C2698A /* AppDelegate.m */; };
+		7919DAC518D3554F00C2698A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7919DAC318D3554F00C2698A /* Main.storyboard */; };
+		7919DAC818D3554F00C2698A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7919DAC718D3554F00C2698A /* ViewController.m */; };
+		7919DACA18D3554F00C2698A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7919DAC918D3554F00C2698A /* Images.xcassets */; };
+		7919DAD118D3554F00C2698A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7919DAD018D3554F00C2698A /* XCTest.framework */; };
+		7919DAD218D3554F00C2698A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7919DAB118D3554F00C2698A /* Foundation.framework */; };
+		7919DAD318D3554F00C2698A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7919DAB518D3554F00C2698A /* UIKit.framework */; };
+		7919DADB18D3554F00C2698A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7919DAD918D3554F00C2698A /* InfoPlist.strings */; };
+		7919DADD18D3554F00C2698A /* SimpleGraphTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7919DADC18D3554F00C2698A /* SimpleGraphTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7919DAD418D3554F00C2698A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7919DAA618D3554F00C2698A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7919DAAD18D3554F00C2698A;
+			remoteInfo = SimpleGraph;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7919DAAE18D3554F00C2698A /* SimpleGraph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleGraph.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7919DAB118D3554F00C2698A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7919DAB318D3554F00C2698A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7919DAB518D3554F00C2698A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7919DAB918D3554F00C2698A /* SimpleGraph-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleGraph-Info.plist"; sourceTree = "<group>"; };
+		7919DABB18D3554F00C2698A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7919DABD18D3554F00C2698A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7919DABF18D3554F00C2698A /* SimpleGraph-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleGraph-Prefix.pch"; sourceTree = "<group>"; };
+		7919DAC018D3554F00C2698A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7919DAC118D3554F00C2698A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7919DAC418D3554F00C2698A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7919DAC618D3554F00C2698A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7919DAC718D3554F00C2698A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7919DAC918D3554F00C2698A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7919DACF18D3554F00C2698A /* SimpleGraphTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleGraphTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7919DAD018D3554F00C2698A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7919DAD818D3554F00C2698A /* SimpleGraphTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleGraphTests-Info.plist"; sourceTree = "<group>"; };
+		7919DADA18D3554F00C2698A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7919DADC18D3554F00C2698A /* SimpleGraphTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleGraphTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7919DAAB18D3554F00C2698A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7919DAB418D3554F00C2698A /* CoreGraphics.framework in Frameworks */,
+				7919DAB618D3554F00C2698A /* UIKit.framework in Frameworks */,
+				7919DAB218D3554F00C2698A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7919DACC18D3554F00C2698A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7919DAD118D3554F00C2698A /* XCTest.framework in Frameworks */,
+				7919DAD318D3554F00C2698A /* UIKit.framework in Frameworks */,
+				7919DAD218D3554F00C2698A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7919DAA518D3554F00C2698A = {
+			isa = PBXGroup;
+			children = (
+				7919DAB718D3554F00C2698A /* SimpleGraph */,
+				7919DAD618D3554F00C2698A /* SimpleGraphTests */,
+				7919DAB018D3554F00C2698A /* Frameworks */,
+				7919DAAF18D3554F00C2698A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7919DAAF18D3554F00C2698A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7919DAAE18D3554F00C2698A /* SimpleGraph.app */,
+				7919DACF18D3554F00C2698A /* SimpleGraphTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7919DAB018D3554F00C2698A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7919DAB118D3554F00C2698A /* Foundation.framework */,
+				7919DAB318D3554F00C2698A /* CoreGraphics.framework */,
+				7919DAB518D3554F00C2698A /* UIKit.framework */,
+				7919DAD018D3554F00C2698A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7919DAB718D3554F00C2698A /* SimpleGraph */ = {
+			isa = PBXGroup;
+			children = (
+				7919DAC018D3554F00C2698A /* AppDelegate.h */,
+				7919DAC118D3554F00C2698A /* AppDelegate.m */,
+				7919DAC318D3554F00C2698A /* Main.storyboard */,
+				7919DAC618D3554F00C2698A /* ViewController.h */,
+				7919DAC718D3554F00C2698A /* ViewController.m */,
+				7919DAC918D3554F00C2698A /* Images.xcassets */,
+				7919DAB818D3554F00C2698A /* Supporting Files */,
+			);
+			path = SimpleGraph;
+			sourceTree = "<group>";
+		};
+		7919DAB818D3554F00C2698A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7919DAB918D3554F00C2698A /* SimpleGraph-Info.plist */,
+				7919DABA18D3554F00C2698A /* InfoPlist.strings */,
+				7919DABD18D3554F00C2698A /* main.m */,
+				7919DABF18D3554F00C2698A /* SimpleGraph-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7919DAD618D3554F00C2698A /* SimpleGraphTests */ = {
+			isa = PBXGroup;
+			children = (
+				7919DADC18D3554F00C2698A /* SimpleGraphTests.m */,
+				7919DAD718D3554F00C2698A /* Supporting Files */,
+			);
+			path = SimpleGraphTests;
+			sourceTree = "<group>";
+		};
+		7919DAD718D3554F00C2698A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7919DAD818D3554F00C2698A /* SimpleGraphTests-Info.plist */,
+				7919DAD918D3554F00C2698A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7919DAAD18D3554F00C2698A /* SimpleGraph */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7919DAE018D3554F00C2698A /* Build configuration list for PBXNativeTarget "SimpleGraph" */;
+			buildPhases = (
+				7919DAAA18D3554F00C2698A /* Sources */,
+				7919DAAB18D3554F00C2698A /* Frameworks */,
+				7919DAAC18D3554F00C2698A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleGraph;
+			productName = SimpleGraph;
+			productReference = 7919DAAE18D3554F00C2698A /* SimpleGraph.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7919DACE18D3554F00C2698A /* SimpleGraphTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7919DAE318D3554F00C2698A /* Build configuration list for PBXNativeTarget "SimpleGraphTests" */;
+			buildPhases = (
+				7919DACB18D3554F00C2698A /* Sources */,
+				7919DACC18D3554F00C2698A /* Frameworks */,
+				7919DACD18D3554F00C2698A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7919DAD518D3554F00C2698A /* PBXTargetDependency */,
+			);
+			name = SimpleGraphTests;
+			productName = SimpleGraphTests;
+			productReference = 7919DACF18D3554F00C2698A /* SimpleGraphTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7919DAA618D3554F00C2698A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Demo;
+				TargetAttributes = {
+					7919DACE18D3554F00C2698A = {
+						TestTargetID = 7919DAAD18D3554F00C2698A;
+					};
+				};
+			};
+			buildConfigurationList = 7919DAA918D3554F00C2698A /* Build configuration list for PBXProject "SimpleGraph" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7919DAA518D3554F00C2698A;
+			productRefGroup = 7919DAAF18D3554F00C2698A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7919DAAD18D3554F00C2698A /* SimpleGraph */,
+				7919DACE18D3554F00C2698A /* SimpleGraphTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7919DAAC18D3554F00C2698A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7919DACA18D3554F00C2698A /* Images.xcassets in Resources */,
+				7919DABC18D3554F00C2698A /* InfoPlist.strings in Resources */,
+				7919DAC518D3554F00C2698A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7919DACD18D3554F00C2698A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7919DADB18D3554F00C2698A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7919DAAA18D3554F00C2698A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7919DAC818D3554F00C2698A /* ViewController.m in Sources */,
+				7919DAC218D3554F00C2698A /* AppDelegate.m in Sources */,
+				7919DABE18D3554F00C2698A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7919DACB18D3554F00C2698A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7919DADD18D3554F00C2698A /* SimpleGraphTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7919DAD518D3554F00C2698A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7919DAAD18D3554F00C2698A /* SimpleGraph */;
+			targetProxy = 7919DAD418D3554F00C2698A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7919DABA18D3554F00C2698A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7919DABB18D3554F00C2698A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7919DAC318D3554F00C2698A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7919DAC418D3554F00C2698A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7919DAD918D3554F00C2698A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7919DADA18D3554F00C2698A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7919DADE18D3554F00C2698A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7919DADF18D3554F00C2698A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7919DAE118D3554F00C2698A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleGraph/SimpleGraph-Prefix.pch";
+				INFOPLIST_FILE = "SimpleGraph/SimpleGraph-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7919DAE218D3554F00C2698A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleGraph/SimpleGraph-Prefix.pch";
+				INFOPLIST_FILE = "SimpleGraph/SimpleGraph-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7919DAE418D3554F00C2698A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimpleGraph.app/SimpleGraph";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleGraph/SimpleGraph-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SimpleGraphTests/SimpleGraphTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7919DAE518D3554F00C2698A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimpleGraph.app/SimpleGraph";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleGraph/SimpleGraph-Prefix.pch";
+				INFOPLIST_FILE = "SimpleGraphTests/SimpleGraphTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7919DAA918D3554F00C2698A /* Build configuration list for PBXProject "SimpleGraph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7919DADE18D3554F00C2698A /* Debug */,
+				7919DADF18D3554F00C2698A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7919DAE018D3554F00C2698A /* Build configuration list for PBXNativeTarget "SimpleGraph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7919DAE118D3554F00C2698A /* Debug */,
+				7919DAE218D3554F00C2698A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7919DAE318D3554F00C2698A /* Build configuration list for PBXNativeTarget "SimpleGraphTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7919DAE418D3554F00C2698A /* Debug */,
+				7919DAE518D3554F00C2698A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7919DAA618D3554F00C2698A /* Project object */;
+}
