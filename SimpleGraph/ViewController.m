@@ -32,13 +32,10 @@
 		NSDate *date = [[NSCalendar currentCalendar] dateByAddingComponents:dc toDate:[NSDate date] options:0];
 		
 		NSDictionary *dict = @{@"x": [df stringFromDate:date],
-							   @"y": [NSNumber numberWithUnsignedInteger:arc4random_uniform(100)]
+							   @"y": [NSNumber numberWithUnsignedInteger:arc4random_uniform(100)+20]
 							   };
 		[self.graphData addObject:dict];
 	}
-	
-	NSLog(@"count %zd", [self.graphData count]);
-	
 
 }
 
@@ -59,38 +56,54 @@
 
 	cell.yLabel.text = [self.graphData[indexPath.item][@"y"] stringValue];
 	
-//	[cell.imageView setTranslatesAutoresizingMaskIntoConstraints:NO];
 
+	// cell size is still undefined when animation starts, so force it to layout now
 	[cell layoutIfNeeded];
 	
 	
-/*
+	
+	// ?????????????????
+	// cant figure out why need this
+	NSArray *cc = cell.imageView.constraints;
+	[cell.imageView removeConstraints:cell.imageView.constraints];
+	[cell.imageView addConstraints:cc];
+	
+
+	
 	cell.heightConstraint.constant = 10;
-	[cell.imageView layoutIfNeeded];
-*/
+	
+	[cell.imageView layoutIfNeeded];	// draws the bar at starting point
+	
+	[cell.yLabel layoutIfNeeded];		// draws y label at starting point
+
+	
+	// set the place to animate to
 	
 	cell.heightConstraint.constant = [self.graphData[indexPath.item][@"y"] floatValue];
 	[cell.imageView setNeedsUpdateConstraints];
-
-
-	[cell.imageView layoutIfNeeded];
 	
-	NSLog(@"%@", cell.imageView.constraints);
-	NSLog(@"%@", cell.constraints);
 	
-/*
+
+//	NSLog(@"%@", cell.imageView.constraints);
+
+	
+
 	[UIView animateWithDuration:3.0
 						  delay:0.0
 		 usingSpringWithDamping:0.5
 		  initialSpringVelocity:5.0
 						options:(UIViewAnimationOptionCurveLinear)
 					 animations:^{
-							[cell.imageView layoutIfNeeded];
+						 
+						 
+						 // anmiate these views with the new constraints
+						 [cell.imageView layoutIfNeeded];
+						 [cell.yLabel layoutIfNeeded];
 	}
 					 completion:^(BOOL finished) {
 
 	}];
-*/
+
 	
 	return cell;
 }
