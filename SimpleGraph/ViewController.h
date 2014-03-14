@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource>
+
+@property (nonatomic,strong) NSMutableArray *graphData;
+
+@property (nonatomic,strong) IBOutlet UICollectionView *collectionView;
 
 @end

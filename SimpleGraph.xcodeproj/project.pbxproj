@@ -21,6 +21,8 @@
 		7919DAD318D3554F00C2698A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7919DAB518D3554F00C2698A /* UIKit.framework */; };
 		7919DADB18D3554F00C2698A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7919DAD918D3554F00C2698A /* InfoPlist.strings */; };
 		7919DADD18D3554F00C2698A /* SimpleGraphTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7919DADC18D3554F00C2698A /* SimpleGraphTests.m */; };
+		7919DAE718D3597800C2698A /* gradient.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7919DAE618D3597800C2698A /* gradient.jpg */; };
+		7919DAEA18D35F2800C2698A /* GraphCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7919DAE918D35F2800C2698A /* GraphCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		7919DAD818D3554F00C2698A /* SimpleGraphTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleGraphTests-Info.plist"; sourceTree = "<group>"; };
 		7919DADA18D3554F00C2698A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7919DADC18D3554F00C2698A /* SimpleGraphTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleGraphTests.m; sourceTree = "<group>"; };
+		7919DAE618D3597800C2698A /* gradient.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gradient.jpg; sourceTree = "<group>"; };
+		7919DAE818D35F2800C2698A /* GraphCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GraphCell.h; path = ../GraphCell.h; sourceTree = "<group>"; };
+		7919DAE918D35F2800C2698A /* GraphCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GraphCell.m; path = ../GraphCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +117,14 @@
 		7919DAB718D3554F00C2698A /* SimpleGraph */ = {
 			isa = PBXGroup;
 			children = (
+				7919DAE618D3597800C2698A /* gradient.jpg */,
 				7919DAC018D3554F00C2698A /* AppDelegate.h */,
 				7919DAC118D3554F00C2698A /* AppDelegate.m */,
-				7919DAC318D3554F00C2698A /* Main.storyboard */,
+				7919DAE818D35F2800C2698A /* GraphCell.h */,
+				7919DAE918D35F2800C2698A /* GraphCell.m */,
 				7919DAC618D3554F00C2698A /* ViewController.h */,
 				7919DAC718D3554F00C2698A /* ViewController.m */,
+				7919DAC318D3554F00C2698A /* Main.storyboard */,
 				7919DAC918D3554F00C2698A /* Images.xcassets */,
 				7919DAB818D3554F00C2698A /* Supporting Files */,
 			);
@@ -229,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7919DACA18D3554F00C2698A /* Images.xcassets in Resources */,
+				7919DAE718D3597800C2698A /* gradient.jpg in Resources */,
 				7919DABC18D3554F00C2698A /* InfoPlist.strings in Resources */,
 				7919DAC518D3554F00C2698A /* Main.storyboard in Resources */,
 			);
@@ -249,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7919DAEA18D35F2800C2698A /* GraphCell.m in Sources */,
 				7919DAC818D3554F00C2698A /* ViewController.m in Sources */,
 				7919DAC218D3554F00C2698A /* AppDelegate.m in Sources */,
 				7919DABE18D3554F00C2698A /* main.m in Sources */,
