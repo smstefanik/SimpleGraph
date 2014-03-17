@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E4C47895-74F2-4E7C-8B95-6CF252B04EF2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SimpleGraph</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C08A01EC-18A9-444E-ABB6-F54D33015077</key>
+		<string>https://github.com/smstefanik/SimpleGraph.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SimpleGraph.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C08A01EC-18A9-444E-ABB6-F54D33015077</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/smstefanik/SimpleGraph.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C08A01EC-18A9-444E-ABB6-F54D33015077</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C08A01EC-18A9-444E-ABB6-F54D33015077</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SimpleGraph</string>
+		</dict>
+	</array>
+</dict>
+</plist>
