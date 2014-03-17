@@ -21,7 +21,7 @@
 
 	self.graphData = [NSMutableArray new];
 	
-	for (int i=0; i < 30; i++)
+	for (int i=0; i < 100; i++)
 	{
 		NSDateFormatter *df = [NSDateFormatter new];
 		df.dateFormat = @"EEE";
